@@ -1,10 +1,22 @@
 @import "tailwindcss";
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
+    /* Colors */
     --primary: #1F4E79;
     --secondary: #1A2540;
     --accent: #2E7D32;
     --background: #F8FAFC;
     --foreground: #1E293B;
+
+    /* Fonts */
+    --font-heading: var(--font-poppins);
+    --font-body: var(--font-inter);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), sans-serif;
+}
