@@ -11,7 +11,7 @@ export default function DesktopNav({ navItems } : { navItems:NavItemData[] }) {
     });
 
     return (
-        <nav className="DesktopNav">
+        <nav className="hidden lg:block">
             {links}
         </nav>
     );
