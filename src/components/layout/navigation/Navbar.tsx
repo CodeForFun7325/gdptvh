@@ -59,7 +59,7 @@ export default function Navbar() {
                 <FiMenu className={`w-8 h-8 ${isMenuOpen ? "text-(--background)" : "text-(--foreground)"}`}/>
             </button>
 
-            {/*<DesktopNav navItems={NAV_ITEMS} />*/}
+            <DesktopNav navItems={NAV_ITEMS} />
             <MobileNavOverlay navItems={NAV_ITEMS} socialMediaLinks={SOCIAL_MEDIA} isMenuOpen={isMenuOpen} />
         </nav>
     );
