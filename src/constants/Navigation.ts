@@ -1,24 +1,34 @@
 import NavItemData from "@/types/NavItemData";
 
+import { AiOutlineHome } from "react-icons/ai";
+import { CgProfile } from "react-icons/cg";
+import { MdEvent, MdEmail } from "react-icons/md";
+import { MdMenuBook } from "react-icons/md";
+
 export const NAV_ITEMS : NavItemData[] = [
     {
         label: "Home",
-        href: "/"
+        href: "/",
+        icon: AiOutlineHome
     },
     {
         label: "About",
-        href: "/"
+        href: "/",
+        icon: CgProfile
     },
     {
         label: "Events",
-        href: "/"
+        href: "/",
+        icon:MdEvent
     },
     {
         label: "Contact",
-        href: "/"
+        href: "/",
+        icon: MdEmail
     },
     {
         label: "Resources",
-        href: "/"
+        href: "/",
+        icon: MdMenuBook
     }
 ];

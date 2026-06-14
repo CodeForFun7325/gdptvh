@@ -1,7 +1,6 @@
 import { IconType } from "react-icons";
 
-export default interface NavItemData {
-    label: string;
+export default interface SocialMediaData {
     href: string;
     icon: IconType;
 }
