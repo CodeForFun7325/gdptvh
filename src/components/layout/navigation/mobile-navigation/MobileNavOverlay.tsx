@@ -1,7 +1,7 @@
 import MobileNav from "@/components/layout/navigation/mobile-navigation/MobileNav";
 
-import NavItemData from "@/types/NavItemData";
-import SocialMediaData from "@/types/SocialMediaData";
+import NavItemData from "@/types/navigation/NavItemData";
+import SocialMediaData from "@/types/navigation/SocialMediaData";
 
 export default function MobileNavOverlay({ navItems, socialMediaLinks, isMenuOpen }:
                                         { navItems:NavItemData[], socialMediaLinks:SocialMediaData[], isMenuOpen: boolean }) {

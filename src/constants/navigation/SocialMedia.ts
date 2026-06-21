@@ -1,4 +1,4 @@
-import SocialMediaData from "@/types/SocialMediaData";
+import SocialMediaData from "@/types/navigation/SocialMediaData";
 
 import { ImFacebook } from "react-icons/im";
 import { FiInstagram } from "react-icons/fi";

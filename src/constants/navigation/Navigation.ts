@@ -1,4 +1,4 @@
-import NavItemData from "@/types/NavItemData";
+import NavItemData from "@/types/navigation/NavItemData";
 
 import { AiOutlineHome } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";

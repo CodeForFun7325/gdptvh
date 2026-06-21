@@ -1,9 +1,9 @@
 import { IconType } from "react-icons";
 import Link from "next/link";
-import Enroll from "@/components/layout/navigation/Enroll";
+import Enroll from "@/components/layout/enroll/Enroll";
 
-import NavItemData from "@/types/NavItemData";
-import SocialMediaData from "@/types/SocialMediaData";
+import NavItemData from "@/types/navigation/NavItemData";
+import SocialMediaData from "@/types/navigation/SocialMediaData";
 
 export default function MobileNav({ navItems, socialMediaLinks } : { navItems:NavItemData[], socialMediaLinks:SocialMediaData[] }) {
 
@@ -54,7 +54,7 @@ export default function MobileNav({ navItems, socialMediaLinks } : { navItems:Na
             </section>
 
             {/* Enrollment Link */}
-            <section className="flex justify-around">
+            <section className="flex">
                 <Enroll />
             </section>
 

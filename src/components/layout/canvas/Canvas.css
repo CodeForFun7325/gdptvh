@@ -1,0 +1,10 @@
+h2 span, p span {
+    display: block;
+}
+
+.image-container {
+    background-image: url("/imgs/Home/HomePageCanvas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,7 +1,7 @@
-import NavItemData from "@/types/NavItemData";
+import NavItemData from "@/types/navigation/NavItemData";
 import Link from "next/link";
 import { ReactElement } from "react";
-import Enroll from "@/components/layout/navigation/Enroll";
+import Enroll from "@/components/layout/enroll/Enroll";
 
 export default function DesktopNav({ navItems } : { navItems:NavItemData[] }) {
 
@@ -14,7 +14,6 @@ export default function DesktopNav({ navItems } : { navItems:NavItemData[] }) {
     return (
         <nav className="hidden lg:block">
             {links}
-            <Enroll />
         </nav>
     );
 }
