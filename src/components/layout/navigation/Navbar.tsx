@@ -62,11 +62,11 @@ export default function Navbar() {
                 <Image
                     src={ isMenuOpen || isLargeScreen ? "/imgs/Logo/HoaSenWhite.png" : "/imgs/Logo/HoaSenGreen.png"}
                     alt="GDPT Logo - An 8 pedal lotus flower"
-                    width={32}
-                    height={32}
+                    width={35}
+                    height={35}
                     className="mr-1.5"
                 />
-                <h1 className={`font-bold ${ isMenuOpen ? "text-(--background)" : "text-(--foreground)"} lg:text-(--background)`}>GĐPT Vạn Hạnh</h1>
+                <h1 className={`text-[1.3rem] font-bold ${ isMenuOpen ? "text-(--background)" : "text-(--foreground)"} lg:text-(--background)`}>GĐPT Vạn Hạnh</h1>
             </Link>
 
             {/* Render navigation links */}
