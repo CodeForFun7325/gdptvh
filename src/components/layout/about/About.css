@@ -1,0 +1,6 @@
+.about-image-container {
+    background-image: url("/imgs/home/about/VowCeremony.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

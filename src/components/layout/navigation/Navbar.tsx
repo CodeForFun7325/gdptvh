@@ -57,10 +57,10 @@ export default function Navbar() {
                          ${ !isMenuOpen ? "bg-(--background)": "bg-(--tertiary) border-b border-(--accent)"} 
                          lg:bg-transparent lg:text-(--background)`}>
 
-            {/* Logo: Clicking on this will take you back to the home page*/}
+            {/* logo: Clicking on this will take you back to the home page*/}
             <Link href="/" className="flex items-center">
                 <Image
-                    src={ isMenuOpen || isLargeScreen ? "/imgs/Logo/HoaSenWhite.png" : "/imgs/Logo/HoaSenGreen.png"}
+                    src={ isMenuOpen || isLargeScreen ? "/imgs/logo/HoaSenWhite.png" : "/imgs/logo/HoaSenGreen.png"}
                     alt="GDPT Logo - An 8 pedal lotus flower"
                     width={35}
                     height={35}

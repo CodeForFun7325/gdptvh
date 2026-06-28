@@ -4,7 +4,7 @@ h2 span, p span {
 }
 
 .image-container {
-    background-image: url("/imgs/Home/HomePageCanvas.jpg");
+    background-image: url("/imgs/home/canvas/CanvasImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
