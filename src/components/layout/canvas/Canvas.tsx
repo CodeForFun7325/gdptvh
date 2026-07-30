@@ -1,5 +1,5 @@
 import Enroll from "@/components/layout/enroll/Enroll";
-import Events from "@/components/layout/events/Events";
+import EventsLink from "@/components/layout/events/EventsLink";
 import "./Canvas.css";
 
 export default function Canvas() {
@@ -26,7 +26,7 @@ export default function Canvas() {
 
                 <div className="flex flex-col mt-5 md:flex-row">
                     <Enroll />
-                    <Events />
+                    <EventsLink />
                 </div>
 
             </div>
