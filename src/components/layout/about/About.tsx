@@ -7,7 +7,7 @@ export default function About() {
     return (
         <section aria-label="About us and our mission.">
 
-            <div className="mt-9 mb-9  pl-4 pr-4 flex max-w-375 justify-around items-center ml-auto mr-auto">
+            <div className="mt-9 mb-9 pl-4 pr-4 flex max-w-375 justify-around items-center ml-auto mr-auto">
 
                 <div className="flex">
                     <Image src="/imgs/home/about/BuddhismWheelOfDharma.jpg"
@@ -19,7 +19,7 @@ export default function About() {
                                       lg:w-25 lg:h-25"/>
 
                     <div aria-label="Mission statement." className="ml-3 mr-3 sm:max-w-120">
-                        <h2 className="font-bold text-(--primary) text-(length:--text-h2)">Our Mission</h2>
+                        <h3 className="font-bold text-(--primary) text-(length:--text-h3)">Our Mission</h3>
                         <p className="text-(length:--text-p)">
                             We inspire the youth to cultivate wisdom, compassion, and mindfulness through Buddha's teachings and service to others.
                         </p>
