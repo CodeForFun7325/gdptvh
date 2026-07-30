@@ -6,7 +6,7 @@
 
 import Link from "next/link";
 
-export default function EventsLink() {
+export default function UpcomingEventsLink() {
     return (
         <Link href="/"
               className="text-(--background) bg-transparent text-(length:--text-button)

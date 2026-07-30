@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Enroll() {
+export default function EnrollLink() {
     return (
         <Link href="/public"
               className="text-(--background) bg-(--accent) text-(length:--text-button)
