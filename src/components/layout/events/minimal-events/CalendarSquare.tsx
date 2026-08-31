@@ -21,15 +21,14 @@ export default function CalendarSquare({ fromDate, toDate } :
         }
         // from date and to date are on different days of different months
         else {
-            monthLabel = `${fromDate.toLocaleDateString("en-US", { month: 'short' })}/
-                          ${toDate.toLocaleDateString("en-US", { month: 'short' })}`;
+            monthLabel = `${fromDate.toLocaleDateString("en-US", { month: 'short' })}/${toDate.toLocaleDateString("en-US", { month: 'short' })}`;
             dayLabel = `${fromDate.getDate()}-${toDate.getDate()}`
         }
 
         return (
             <>
-                <p>${monthLabel}</p>
-                <p>${dayLabel}</p>
+                <p>{monthLabel}</p>
+                <p>{dayLabel}</p>
             </>
         );
 
@@ -37,10 +36,14 @@ export default function CalendarSquare({ fromDate, toDate } :
 
 
     return (
-        <div>
-            {
-
-            }
+        <div className="flex flex-col 
+                        text-(--background) 
+                        bg-(--tertiary) 
+                        items-center 
+                        justify-center 
+                        rounded-md
+                        min-w-20 min-h-20">
+            { generateDateLabels() }
         </div>
     )
 }

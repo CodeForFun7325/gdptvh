@@ -10,17 +10,20 @@ export default function EventsDashboard() {
         {
             eventName: "Summer Camp",
             eventFromDate: new Date(2020, 7, 20),
-            eventToDate: new Date(2020, 7, 24)
+            eventToDate: new Date(2020, 8, 24), 
+            location: "Seattle, WA"
         },
         {
             eventName: "Training Camp",
             eventFromDate: new Date(2020, 8, 20),
-            eventToDate: new Date(2020, 8, 24)
+            eventToDate: new Date(2020, 9, 24),
+            location: "Renton, WA"
         },
         {
             eventName: "Fundraiser",
             eventFromDate: new Date(2020, 9, 9),
-            eventToDate: new Date(2020, 9, 10)
+            eventToDate: new Date(2020, 9, 9), 
+            location: "Kent, WA"
         }
     ];
 
@@ -32,6 +35,7 @@ export default function EventsDashboard() {
                         event={event.eventName}
                         fromDate={event.eventFromDate}
                         toDate={event.eventToDate}
+                        location={event.location}
                         hideTopBorder={isFirst}/>
         );
     });
