@@ -1,4 +1,4 @@
-import MiniEvents from "@/app/events/components/minimal-events/MiniEvents";
+import MiniEvents from "@/components/layout/events/minimal-events/MiniEvents";
 
 import EventsData from "@/types/events/Events";
 
@@ -40,7 +40,13 @@ export default function EventsDashboard() {
 
     return (
         <section aria-label="Showcases all the upcoming events"
-                 className="p-4">
+                 className="mt-(--home-page-section-margin-top)
+                            mb-(--home-page-section-margin-bottom)
+                            ml-(--home-page-section-margin-left)
+                            mr-(--home-page-section-margin-right)
+                            pl-(--home-page-section-padding-left)
+                            pr-(--home-page-section-padding-right)
+                            max-w-(--home-page-max-section-width)">
             <h3 className="font-bold text-(--primary) text-(length:--text-h3)">Upcoming Events</h3>
 
             <div className="flex flex-col sm:hidden">
