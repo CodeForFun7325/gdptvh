@@ -1,5 +1,5 @@
 import EnrollLink from "@/components/layout/enroll/EnrollLink";
-import UpcomingEventsLink from "@/components/layout/events/UpcomingEventsLink";
+import UpcomingEventsLink from "@/components/layout/events/links/UpcomingEventsLink";
 import "./Canvas.css";
 
 export default function Canvas() {

@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    overflow-x: clip;
 }
 
 :root {
@@ -28,6 +27,15 @@
     --text-h5: 1rem;
     --text-p: 1rem;
     --text-button: 1rem;
+
+    /* Home Page Sections */
+    --home-page-max-section-width: 1500px;
+    --home-page-section-padding-left: 1rem;
+    --home-page-section-padding-right: 1rem;
+    --home-page-section-margin-top: 2.25rem;
+    --home-page-section-margin-bottom: 2.25rem;
+    --home-page-section-margin-left: auto;
+    --home-page-section-margin-right: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,6 +44,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p, span {
     font-family: var(--font-body);
+}
+
+@theme {
+    --breakpoint-xs: 450px;
 }
 
 @media (min-width: 640px) {
