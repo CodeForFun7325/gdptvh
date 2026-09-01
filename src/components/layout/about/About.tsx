@@ -14,9 +14,7 @@ export default function About() {
                             pl-(--home-page-section-padding-left)
                             pr-(--home-page-section-padding-right)
                             max-w-(--home-page-max-section-width)
-                            flex
-                            justify-around
-                            items-center">
+                            flex justify-around items-center">
 
                 <div className="flex">
                     <Image src="/imgs/home/about/BuddhismWheelOfDharma.jpg"

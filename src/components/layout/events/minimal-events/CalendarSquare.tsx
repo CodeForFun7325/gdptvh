@@ -2,33 +2,38 @@ export default function CalendarSquare({ fromDate, toDate } :
                                         { fromDate: Date, toDate: Date}) {
 
     const generateDateLabels = () => {
-        let monthLabel: string = "";
-        let dayLabel: string = "";
 
-        // from date and to date are on the same day
+        let line1: string = "";
+        let line2: string = "";
+
+        // if from date and to date are on the same day then
+        // line 1 will represent the month and line 2 will represent the day
         if (fromDate.getMonth() === toDate.getMonth() &&
             fromDate.getDate() === toDate.getDate()) {
 
-            monthLabel = fromDate.toLocaleDateString("en-US", { month: 'short' });
-            dayLabel = `${fromDate.getDate().toString()}`;
+            line1 = fromDate.toLocaleDateString("en-US", { month: 'short' });
+            line2 = `${fromDate.getDate().toString()}`;
         }
-        // from date and to date are on different days of the same month
+        // if from date and to date are on different days of the same month then
+        // line 1 will represent the month and line 2 will represent the days
         else if (fromDate.getMonth() === toDate.getMonth() &&
                  fromDate.getDate() != toDate.getDate()) {
 
-            monthLabel = fromDate.toLocaleDateString("en-US", { month: 'short' });
-            dayLabel = `${fromDate.getDate()}-${toDate.getDate()}`
+            line1 = fromDate.toLocaleDateString("en-US", { month: 'short' });
+            line2 = `${fromDate.getDate()}-${toDate.getDate()}`
         }
-        // from date and to date are on different days of different months
+        // if from date and to date are on different days of different months then
+        // line 1 will represent from date and line 2 will represent to date
         else {
-            monthLabel = `${fromDate.toLocaleDateString("en-US", { month: 'short' })}/${toDate.toLocaleDateString("en-US", { month: 'short' })}`;
-            dayLabel = `${fromDate.getDate()}-${toDate.getDate()}`
+
+            line1 = `${fromDate.toLocaleDateString("en-US", { month: 'short' })} ${fromDate.getDate()}`
+            line2 = `${toDate.toLocaleDateString("en-US", { month: 'short' })} ${toDate.getDate()}`
         }
 
         return (
             <>
-                <p>{monthLabel}</p>
-                <p>{dayLabel}</p>
+                <p>{line1}</p>
+                <p>{line2}</p>
             </>
         );
 
