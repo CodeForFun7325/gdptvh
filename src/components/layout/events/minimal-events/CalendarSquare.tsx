@@ -39,7 +39,6 @@ export default function CalendarSquare({ fromDate, toDate } :
 
     }
 
-
     return (
         <div className="flex flex-col 
                         text-(--background) 
@@ -47,7 +46,9 @@ export default function CalendarSquare({ fromDate, toDate } :
                         items-center 
                         justify-center 
                         rounded-md
-                        min-w-20 min-h-20">
+                        min-w-20 min-h-20
+                        xs:w-22 xs:h-22
+                        xs:mr-3">
             { generateDateLabels() }
         </div>
     )

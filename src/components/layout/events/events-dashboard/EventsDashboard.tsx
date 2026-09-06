@@ -1,4 +1,6 @@
 import MiniEvents from "@/components/layout/events/minimal-events/MiniEvents";
+import DetailEvents from "@/components/layout/events/detailed-events/DetailEvents";
+import EventsCarousel from "@/components/layout/events/events-carousel/EventsCarousel";
 
 import EventsData from "@/types/events/Events";
 
@@ -40,7 +42,11 @@ export default function EventsDashboard() {
         );
     });
 
-    let DetailedEventComponents = null;
+    let DetailedEventComponents = tempData.map((event, index) => {
+        return (
+            <DetailEvents key={event.eventName} />
+        )
+    });
 
     return (
         <section aria-label="Showcases all the upcoming events"
@@ -53,13 +59,15 @@ export default function EventsDashboard() {
                             max-w-(--home-page-max-section-width)">
             <h3 className="font-bold text-(--primary) text-(length:--text-h3)">Upcoming Events</h3>
 
-            <div className="flex flex-col sm:hidden">
+            <div className="flex flex-col xs:hidden">
                 { MiniEventComponents }
             </div>
 
-            <div className="hidden sm:flex flex-col pl-2 pr-2">
-                { DetailedEventComponents }
-            </div>
+            {/*<div className="hidden pl-2 pr-2 xs:flex justify-around flex-wrap align-middle">*/}
+            {/*    { DetailedEventComponents }*/}
+            {/*</div>*/}
+
+            <EventsCarousel events={DetailedEventComponents}/>
 
         </section>
     );

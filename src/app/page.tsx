@@ -4,10 +4,10 @@ import EventsDashboard from "@/components/layout/events/events-dashboard/EventsD
 
 export default function Home() {
   return (
-      <>
+      <div className="overflow-x-clip">
           <Header />
           <About />
           <EventsDashboard />
-      </>
+      </div>
   );
 }
