@@ -34,9 +34,9 @@ export default function EventsDashboard() {
 
         return (
             <MiniEvents key={event.eventName}
-                        event={event.eventName}
-                        fromDate={event.eventFromDate}
-                        toDate={event.eventToDate}
+                        eventName={event.eventName}
+                        eventFromDate={event.eventFromDate}
+                        eventToDate={event.eventToDate}
                         location={event.location}
                         hideTopBorder={isFirst}/>
         );
@@ -44,7 +44,11 @@ export default function EventsDashboard() {
 
     let DetailedEventComponents = tempData.map((event, index) => {
         return (
-            <DetailEvents key={event.eventName} />
+            <DetailEvents key={event.eventName}
+                          eventName={event.eventName}
+                          eventFromDate={event.eventFromDate}
+                          eventToDate={event.eventToDate}
+                          location={event.location} />
         )
     });
 
@@ -57,6 +61,7 @@ export default function EventsDashboard() {
                             pl-(--home-page-section-padding-left)
                             pr-(--home-page-section-padding-right)
                             max-w-(--home-page-max-section-width)">
+
             <h3 className="font-bold text-(--primary) text-(length:--text-h3)">Upcoming Events</h3>
 
             <div className="flex flex-col xs:hidden">

@@ -1,0 +1,9 @@
+.event-picture {
+    width: 375px;
+    height: 125px;
+    background-image: url("/imgs/home/about/FamilyPhoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
