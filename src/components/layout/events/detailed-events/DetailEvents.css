@@ -7,3 +7,9 @@
     background-position: center;
     border-radius: 10px 10px 0 0;
 }
+
+@media (min-width: 768px) {
+    .event-picture {
+        width: 475px;
+    }
+}

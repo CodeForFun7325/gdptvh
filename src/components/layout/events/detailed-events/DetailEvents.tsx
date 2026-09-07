@@ -16,12 +16,12 @@ export default function DetailEvents({ eventName, eventFromDate, eventToDate, lo
     })
 
     return (
-        <div className="flex flex-col flex-[0_0_400] mt-2 mb-2 justify-center items-center">
+        <div className="flex flex-col flex-[0_0_400] mt-2 mb-2 justify-center items-center md:ml-2 md:mr-2">
             {/* Event Picture */}
             <div className="event-picture"/>
 
             {/* Event Details */}
-            <div className="flex shadow-lg rounded-b-[10px] w-93.75 p-3 min-h-37.5">
+            <div className="flex shadow-lg rounded-b-[10px] w-93.75 p-3 min-h-37.5 md:w-118.75 md:min-h-45">
                 <CalendarSquare fromDate={eventFromDate} toDate={eventToDate} />
                 <div>
                     <h5 className="font-semibold text-(--primary) text-(length:--text-h5)">{eventName}</h5>
