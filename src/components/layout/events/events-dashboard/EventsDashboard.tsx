@@ -24,7 +24,7 @@ export default function EventsDashboard() {
         {
             eventName: "Fundraiser",
             eventFromDate: new Date(2020, 9, 9),
-            eventToDate: new Date(2020, 9, 9), 
+            eventToDate: new Date(2020, 9, 9),
             location: "Kent, WA"
         }
     ];
