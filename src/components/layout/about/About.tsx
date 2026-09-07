@@ -7,7 +7,14 @@ export default function About() {
     return (
         <section aria-label="About us and our mission.">
 
-            <div className="mt-9 mb-9 pl-4 pr-4 flex max-w-375 justify-around items-center ml-auto mr-auto">
+            <div className="mt-(--home-page-section-margin-top)
+                            mb-(--home-page-section-margin-bottom)
+                            ml-(--home-page-section-margin-left)
+                            mr-(--home-page-section-margin-right)
+                            pl-(--home-page-section-padding-left)
+                            pr-(--home-page-section-padding-right)
+                            max-w-(--home-page-max-section-width)
+                            flex justify-around items-center">
 
                 <div className="flex">
                     <Image src="/imgs/home/about/BuddhismWheelOfDharma.jpg"
