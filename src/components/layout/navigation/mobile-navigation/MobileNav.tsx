@@ -1,4 +1,3 @@
-import { IconType } from "react-icons";
 import Link from "next/link";
 import EnrollLink from "@/components/layout/enroll/EnrollLink";
 
@@ -8,7 +7,7 @@ import SocialMediaData from "@/types/navigation/SocialMediaData";
 export default function MobileNav({ navItems, socialMediaLinks } : { navItems:NavItemData[], socialMediaLinks:SocialMediaData[] }) {
 
     // Nav Link Component
-    function NavLink({label, href, icon: Icon} : {label: string, href: string, icon: IconType }) {
+    function NavLink({label, href, icon: Icon} : NavItemData) {
         return (
             <Link
                 href={href}
@@ -20,6 +19,7 @@ export default function MobileNav({ navItems, socialMediaLinks } : { navItems:Na
         );
     }
 
+    // Social Media Link Component
     function SocialMediaLink({href, icon: Icon} : SocialMediaData) {
         return(
             <Link href={href}

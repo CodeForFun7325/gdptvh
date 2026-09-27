@@ -68,10 +68,6 @@ export default function EventsDashboard() {
                 { MiniEventComponents }
             </div>
 
-            {/*<div className="hidden pl-2 pr-2 xs:flex justify-around flex-wrap align-middle">*/}
-            {/*    { DetailedEventComponents }*/}
-            {/*</div>*/}
-
             <EventsCarousel events={DetailedEventComponents}/>
 
         </section>
