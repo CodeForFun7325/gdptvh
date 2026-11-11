@@ -1,5 +1,5 @@
-import React, { ReactElement } from 'react';
+import React, { ReactElement } from "react";
 
 export default interface CarouselProps {
-    events: ReactElement[];
+  events: ReactElement[];
 }
